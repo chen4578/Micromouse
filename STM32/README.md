@@ -37,5 +37,12 @@ In `main.c`, we add `HAL_TIM_Encoder_Start(&htim1, TIM_CHANNEL_ALL)` and `HAL_TI
 We configure the pins as follows:
 
 <p align="center">
-  <img src="https://github.com/chen4578/Micromouse/blob/afee51421cf9a5e3446bc452cd8210d0812ebf4e/assets/Screenshot%202025-10-01%20232853.png" width="400">
+  <img src="https://github.com/chen4578/Micromouse/blob/87a5951ee8dfd804f4a8383eb12899fb9bd77c1c/assets/Screenshot%202025-10-01%20234713.png" width="400">
 </p>
+
+Choose TIM4 from "Timers" and set "Channel1" to "PWM Generation CH1." This is repeated for the rest of the channels. In Parameter Settings, set "Counter Period" to 3199 (the maximum PWM frequency for the motor driver).
+
+In "NVIC Settings," enable TIM4 global interrupt.
+
+In `main.c`, we add `HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_1)` and repeat for the rest of the channels. We can set motor speed and direction by calling `setMotorRPWM` and `setMotorLPWM`.
+
