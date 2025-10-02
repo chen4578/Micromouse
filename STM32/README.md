@@ -23,3 +23,8 @@ The function verifies whether the pin that called the interrupt is PC13 which is
 ### Encoders
 
 In the "Device Configuration Tool," we configure the pins as follows: 
+
+<p align="center">
+  <img src="https://github.com/chen4578/Open-Project-Space-OPS-/blob/00a2dc64bffb77ab1def42925496dc5a38b4b3c6/assets/distance-sensor-2.png" width="400">
+</p>
+
