@@ -22,9 +22,20 @@ The function verifies whether the pin that called the interrupt is PC13 which is
 
 ### Encoders
 
-In the "Device Configuration Tool," we configure the pins as follows: 
+In the "Device Configuration Tool," we configure the pins that support hardware encoders as follows: 
 
 <p align="center">
-  <img src="https://github.com/chen4578/Open-Project-Space-OPS-/blob/00a2dc64bffb77ab1def42925496dc5a38b4b3c6/assets/distance-sensor-2.png" width="400">
+  <img src="https://github.com/chen4578/Micromouse/blob/afee51421cf9a5e3446bc452cd8210d0812ebf4e/assets/Screenshot%202025-10-01%20232853.png" width="400">
 </p>
 
+Then, we modify the timer settings by expanding the "Timers" dropdown and choose TIM2. After, set "Combined Channels" to "Encoder Mode." Next, in set "Counter Period" to 65535 (the maximum encoder counts that can be stored) in "Parameter Settings" and make "Encoder Mode" be "Encoder Mode TI1" and "Encoder Mode TI2." This is repeated for Timer 1 by following the same steps but selecting TIM1.
+
+In `main.c`, we add `HAL_TIM_Encoder_Start(&htim1, TIM_CHANNEL_ALL)` and `HAL_TIM_Encoder_Start(&htim2, TIM_CHANNEL_ALL)` as well as define `int16_t left_counts = 0` and `int16_t right_counts = 0` ro record encoder counts. Furthermore, `left_counts = getLeftEncoderCounts()` and `right_counts = getRightEncoderCounts()` serves to update the encoder counts.
+
+### Motors
+
+We configure the pins as follows:
+
+<p align="center">
+  <img src="https://github.com/chen4578/Micromouse/blob/afee51421cf9a5e3446bc452cd8210d0812ebf4e/assets/Screenshot%202025-10-01%20232853.png" width="400">
+</p>
