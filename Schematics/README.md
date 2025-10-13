@@ -10,7 +10,7 @@ The main component for the power delivery system will be the voltage regulator. 
 
 As seen in the circuit, we also need a 10 and 22 uF capacitor. Specifically, we decided to use a MLCC (multilayer ceramic capacitor) with a package/case of 0603 for compactness and to simplify soldering for both capacitors.
 
-In order to connectthe batteries to the PCB and the breakout board, we need two JST connectors. We use B2B-PH-K-S JST connectors because they connect well to the batteries.
+In order to connect the batteries to the PCB and the breakout board, we need two JST connectors. We use B2B-PH-K-S JST connectors because they connect well to the batteries.
 
 Below is the completed schematic:
 
