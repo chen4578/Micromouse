@@ -28,6 +28,12 @@ Below is the h-bridge pinout:
 
 <p align="center">
 
-  <img src="https://github.com/chen4578/Micromouse/blob/0d55c0cc4b256a2351a45386ed9b3b7f1dc8eed2/assets/Screenshot%202025-10-12%20201238.png" width="500">
+  <img src="https://github.com/chen4578/Micromouse/blob/a5d60f13ace7b01a16527bdbbfb77dd2d47d164b/assets/image20-bc8fe0a03ac82416e98b3f803fc83a6a.png" width="300">
 
 </p>
+
+The schematic for connecting the h-bridge is as follows:
+
+<p align="center">
+
+  <img src="https://github.com/chen4578/Micromouse/blob/a5d60f13ace7b01a16527bdbbfb77dd2d47d164b/assets/image20-bc8fe0a03ac82416e98b3f803fc83a6a.png" width="300">
