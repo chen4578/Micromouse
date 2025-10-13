@@ -19,3 +19,15 @@ Below is the completed schematic:
   <img src="https://github.com/chen4578/Micromouse/blob/0d55c0cc4b256a2351a45386ed9b3b7f1dc8eed2/assets/Screenshot%202025-10-12%20201238.png" width="500">
 
 </p>
+
+# H-Bridge Schematic
+
+To control the motors, we will use an h-bridge. For our project, we will be using a L293DD H-Bridge. The intergrated has two h-bridges so that each motor has an h-bridge. It has 2 input and output pins per motor as well as two enable pins which take 3.3V to turn on the h-bridge.
+
+Below is the h-bridge pinout:
+
+<p align="center">
+
+  <img src="https://github.com/chen4578/Micromouse/blob/0d55c0cc4b256a2351a45386ed9b3b7f1dc8eed2/assets/Screenshot%202025-10-12%20201238.png" width="500">
+
+</p>
